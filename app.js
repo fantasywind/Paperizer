@@ -3,13 +3,13 @@
  * Module dependencies.
  */
 
-var express = require('express');
-var routes = require('./routes');
-var user = require('./routes/user');
-var http = require('http');
-var path = require('path');
-
-var app = express();
+var express = require('express'),
+    routes = require('./routes'),
+    user = require('./routes/user'),
+    http = require('http'),
+    path = require('path'),
+    db = require('./lib/database.js'),
+    app = express();
 
 // all environments
 app.set('port', process.env.PORT || 3000);
@@ -19,8 +19,9 @@ app.use(express.favicon());
 app.use(express.logger('dev'));
 app.use(express.bodyParser());
 app.use(express.methodOverride());
-app.use(express.cookieParser('your secret here'));
+app.use(express.cookieParser('jf8904q3@afsdAWERT$EAW'));
 app.use(express.session());
+app.use(db.bindDB); // 榜定 database models
 app.use(app.router);
 app.use(require('stylus').middleware(__dirname + '/public'));
 app.use(express.static(path.join(__dirname, 'public')));
