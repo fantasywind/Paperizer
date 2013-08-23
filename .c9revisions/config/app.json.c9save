@@ -1,3 +1,0 @@
-{"ts":1377239772559,"silentsave":true,"restoring":false,"patch":[[]],"length":0}
-{"contributors":[],"silentsave":false,"ts":1377239832239,"patch":[[{"diffs":[[1,"{\n    \"connStr\": \"mongo paulo.mongohq.com:10028/shockpaper -u shock -pnpng2O11\"    \n}"]],"start1":0,"start2":0,"length1":0,"length2":85}]],"length":85,"saved":false}
-{"ts":1377240014338,"patch":[[{"diffs":[[0,": \"mongo"],[-1," "],[1,"db://shock:npng2O11@"],[0,"paulo.mo"]],"start1":15,"start2":15,"length1":17,"length2":36},{"diffs":[[0,"aper"],[-1," -u shock -pnpng2O11"],[0,"\"   "]],"start1":73,"start2":73,"length1":28,"length2":8}]],"length":84,"saved":false}
