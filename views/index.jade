@@ -1,5 +1,16 @@
 extends layout
 
-block content
-  h1= title
-  p Welcome to #{title}
+block body
+ div.container-fluid
+   div.row-fluid
+      div.span3
+          div.hero-unit
+          h2 Menu
+          p Menu coming soon
+      div.span9
+          h2 ShockNews
+          p ShockNews coming soon
+  
+  
+  script(src='js/lib/angular.min.js')
+  script(src='js/lib/bootstrap.min.js')
