@@ -1,16 +1,141 @@
 extends layout
 
 block body
- div.container-fluid
-   div.row-fluid
-      div.span3
-          div.hero-unit
-          h2 Menu
-          p Menu coming soon
-      div.span9
-          h2 ShockNews
-          p ShockNews coming soon
+  div.container-fluid
+   div.span4
+    div.hero-unit
+    //Push Wrapper
+    .container_self
+     #mp-pusher.mp-pusher
+      //mp-menu 
+      nav#mp-menu.mp-menu
+       .mp-level
+         h2 All Categories
+          ul
+            li.icon2.icon2-arrow-left
+              a Devices
+              .mp-level
+                h2.icon2.icon2-display Devices
+                ul
+                  li.icon2.icon2-arrow-left
+                    a.icon2.icon2-phone(href='#') Mobile Phones
+                    .mp-level
+                      h2 Mobile Phones
+                      ul
+                        li
+                          a(href='#') Super Smart Phone
+                        li
+                          a(href='#') Thin Magic Mobile
+                        li
+                          a(href='#') Performance Crusher
+                        li
+                          a(href='#') Futuristic Experience
+                  li.icon2.icon2-arrow-left
+                    a.icon2.icon2-tv(href='#') Televisions
+                    .mp-level
+                      h2 Televisions
+                      ul
+                        li
+                          a(href='#') Flat Superscreen
+                        li
+                          a(href='#') Gigantic LED
+                        li
+                          a(href='#') Power Eater
+                        li
+                          a(href='#') 3D Experience
+                        li
+                          a(href='#') Classic Comfort
+                  li.icon2.icon2-arrow-left
+                    a.icon2.icon2-camera(href='#') Cameras
+                    .mp-level
+                      h2 Cameras
+                      ul
+                        li
+                          a(href='#') Smart Shot
+                        li
+                          a(href='#') Power Shooter
+                        li
+                          a(href='#') Easy Photo Maker
+                        li
+                          a(href='#') Super Pixel
+            li.icon2.icon2-arrow-left
+              a Magazines
+              .mp-level
+                h2.icon2.icon2-news Magazines
+                ul
+                  li
+                    a(href='#') National Geographic
+                  li
+                    a(href='#') Scientific American
+                  li
+                    a(href='#') The Spectator
+                  li
+                    a(href='#') The Rambler
+                  li
+                    a(href='#') Physics World
+                  li
+                    a(href='#') The New Scientist
+            li.icon2.icon2-arrow-left
+              a Store
+              .mp-level
+                h2.icon2.icon2-shop Store
+                ul
+                  li.icon2.icon2-arrow-left
+                    a.icon2.icon2-t-shirt(href='#') Clothes
+                    .mp-level
+                      h2.icon2.icon2-t-shirt Clothes
+                      ul
+                        li.icon2.icon2-arrow-left
+                          a.icon2.icon2-female(href='#') Women's Clothing
+                          .mp-level
+                            h2 Women's Clothing
+                            ul
+                              li
+                                a(href='#') Tops
+                              li
+                                a(href='#') Dresses
+                              li
+                                a(href='#') Trousers
+                              li
+                                a(href='#') Shoes
+                              li
+                                a(href='#') Sale
+                        li.icon2.icon2-arrow-left
+                          a.icon2.icon2-male(href='#') Men's Clothing
+                          .mp-level
+                            h2 Men's Clothing
+                            ul
+                              li
+                                a(href='#') Shirts
+                              li
+                                a(href='#') Trousers
+                              li
+                                a(href='#') Shoes
+                              li
+                                a(href='#') Sale
+                  li
+                    a.icon2.icon2-diamond(href='#') Jewelry
+                  li
+                    a.icon2.icon2-music(href='#') Music
+                  li
+                    a.icon2.icon2-food(href='#') Grocery
+            li
+              a Collections
+            li
+              a.icon2.icon2-wallet(href='#') Credits
+      //
+       /mp-menu 
+   div.span9
+      //
+         this is for emulating position fixed of the nav 
+      .block.block-40.clearfix
+        p
+          a#trigger.menu-trigger(href='#') Open/Close Menu
+        
   
-  
-  script(src='js/lib/angular.min.js')
-  script(src='js/lib/bootstrap.min.js')
+  script(src='js/langular.min.js')
+  script(src='js/bootstrap.min.js')
+  script(src='js/classie.js')
+  script(src='js/mlpushmenu.js')
+  script
+    new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
