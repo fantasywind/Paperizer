@@ -141,6 +141,7 @@
 							ev.stopPropagation();
 							classie.add( closest( el, 'mp-level' ), 'mp-level-overlay' );
 							self._openMenu( subLevel );
+							
 						}
 					} );
 				}
@@ -156,6 +157,8 @@
 						self.level = level;
 						self._closeMenu();
 					}
+					if(self.level == 0)
+						document.getElementById('container_self_level').className = "container_self";
 				} );
 			} );
 

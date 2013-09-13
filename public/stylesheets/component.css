@@ -21,7 +21,7 @@ html, body, .container, .scroller {
 
 .container_self {
 	height:100%;
-	width:300px;
+	width:370px;
 	position: absolute;
 	overflow: hidden;
 	background: #34495e;
